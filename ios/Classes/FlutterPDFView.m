@@ -42,7 +42,7 @@
                     arguments:(id _Nullable)args
               binaryMessenger:(NSObject<FlutterBinaryMessenger>*)messenger {
     self = [super init];
-    _pdfView = [[FLTPDFView new] initWithFrame:frame arguments:args controler:self];
+    _pdfView = [[FLTPDFView alloc] initWithFrame:frame arguments:args controler:self];
     _viewId = viewId;
     
     NSString* channelName = [NSString stringWithFormat:@"plugins.endigo.io/pdfview_%lld", viewId];
